@@ -26,6 +26,8 @@ public class Feedback {
 
     private LocalDateTime submittedAt;
 
+    private String sentiment;
+
     @PrePersist
     public void prePersist(){
         this.submittedAt = LocalDateTime.now();
