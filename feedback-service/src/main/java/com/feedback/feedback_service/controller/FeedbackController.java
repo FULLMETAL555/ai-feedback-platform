@@ -16,8 +16,7 @@ public class FeedbackController {
     @Autowired
     private FeedbackService feedbackService;
 
-    @Autowired
-    private Feedback feedback;
+
 
     @PostMapping
     public Feedback submitFeedback(@RequestBody Feedback feedback){
