@@ -28,6 +28,10 @@ public class Feedback {
 
     private String sentiment;
 
+    @ManyToOne
+    @JoinColumn(name="product_id",nullable = false)
+    private Product product;
+
     @PrePersist
     public void prePersist(){
         this.submittedAt = LocalDateTime.now();
